@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import CartProvider from "./components/Providers";
 import ShoppingCartModal from "./components/ShoppingCartModal";
 
+import "slick-carousel/slick/slick.css";
+import Footer from "./components/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +27,7 @@ export default function RootLayout({
           <Navbar></Navbar>
           <ShoppingCartModal/>
           {children}
+          <Footer/>
         </CartProvider>
       </body>
     </html>

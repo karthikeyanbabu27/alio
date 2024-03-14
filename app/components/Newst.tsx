@@ -46,7 +46,7 @@ export default async function Newest() {
                 <Image
                   src={product.imageUrl}
                   alt="Product image"
-                  className="w-full h-full object-cover object-center lg:h-full lg:w-full"
+                  className="w-full h-full object-cover object-center lg:h-full lg:w-full group-hover:scale-110 duration-200"
                   width={300}
                   height={300}
                 />
