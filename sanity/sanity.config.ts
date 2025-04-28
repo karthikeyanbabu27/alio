@@ -1,13 +1,13 @@
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'ecom axio',
+  title: 'fishy fish',
 
-  projectId: 'ts3ffqdz',
+  projectId: 'rw54w3td',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],

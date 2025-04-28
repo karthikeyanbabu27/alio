@@ -17,11 +17,11 @@ export default function Navbar() {
   const pathname = usePathname();
   const { handleCartClick } = useShoppingCart();
   return (
-    <header className="mb-8 border-b  top-0 left-0 right-0 bg-white z-50">
+    <header className="sticky  mb-8 border-b  top-0 left-0 right-0 bg-white z-50 shadow-md">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl ">
         <Link href="/">
           <h1 className="text-2xl md:text-4xl font-bold">
-            AL<span className="text-primary">io</span>
+            <span className="text-primary">Fishy Fish</span>
           </h1>
         </Link>
 

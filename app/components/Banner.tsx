@@ -1,8 +1,9 @@
 "use client";
 import Slider from "react-slick";
-import bannerone from "../images/bannerone.jpg";
+import bannerone from "../images/B86681CB-D78E-4EEF-8D4B-76A59E2EE32C_1_201_a.jpeg";
 import bannertwo from "../images/bannertwo.jpg";
 import bannerthree from "../images/bannerthree.jpg";
+import seafish from '../images/seafish.webp'
 import { PiCaretLeftLight, PiCaretRightLight } from "react-icons/pi";
 import Image from "next/image";
 import BannerText from "./BannerText";
@@ -41,24 +42,25 @@ const Banner = () => {
     prevArrow: <NextArrow />,
   };
   return (
-    <div className="relative ">
+    <section className=" mx-auto max-w-2xl  mt-0 px-4 sm:pb-6 lg:max-w-7xl lg:px-8 " >
+      <div className="relative">
       <Slider {...settings}>
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative ">
           <Image
             src={bannerone}
             alt="bannerone"
             className="w-full h-full relative"
             priority
           />
-          <BannerText title="Outware Picks" />
+          {/* <BannerText title="Outware Picks" /> */}
         </div>
         <div className="w-full h-full relative">
           <Image
             src={bannertwo}
             alt="bannertwo"
-            className="w-full h-full relative"
+            className="w-full h-full relative "
           />
-          <BannerText title="Seasonal Offers" />
+          {/* <BannerText title="Seasonal Offers" /> */}
         </div>
         <div className="w-full h-full relative">
           <Image
@@ -66,11 +68,12 @@ const Banner = () => {
             alt="bannerthree"
             className="w-full h-full relative"
           />
-          <BannerText title="Best for men" />
+          {/* <BannerText title="Best for men" /> */}
         </div>
       </Slider>
       <div className="absolute w-full h-44 bg-gradient-to-t from-gray-100 to-transparent bottom-0 left-0 z-10" />
     </div>
+    </section>
   );
 };
 
